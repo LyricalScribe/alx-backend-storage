@@ -1,12 +1,12 @@
---create user table if it doesn't exist
-CREATE TABLE IF NOT EXISTS userS (
-	--user unique id
-	id INTEGER PRIMARY KEY AUTO_INCREMENT,
-	
-	--user email with char limit
-       	email VARCHAR(255) NOT NULL UNIQUE,
-
-	--user name with char limit
-       	name VARCHAR(255)
+-- Create table users if it doesn't already exist
+CREATE TABLE IF NOT EXISTS users (
+    -- User unique id
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    
+    -- User email
+    email VARCHAR(255) NOT NULL UNIQUE,
+    
+    -- User name
+    name VARCHAR(255)
 );
 
